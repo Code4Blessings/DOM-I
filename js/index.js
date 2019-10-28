@@ -106,9 +106,48 @@ const footerP = document.querySelector('footer p');
   contactSecP[2].textContent = "sales@greatidea.io";
 
 //Footer
-  footerP.textContent = "Copyright Great Idea! 2218";
+  footerP.textContent = "Copyright Great Idea! 2018";
 
-  
+//Task 3 Navbar Color & Size
+navItem.forEach((element) => {
+  element.style.color = "blue";
+  element.style.fontSize = "22px";
+});
+
+//Extra Links
+const link = document.createElement('a');
+const anotherLink = document.createElement('a');
+
+link.textContent = 'Portfolio';
+link.style.color = 'blue';
+link.style.fontSize = '22px';
+anotherLink.textContent = 'Blog';
+anotherLink.style.color = 'blue';
+anotherLink.style.fontSize = '22px';
+
+const navBar = document.querySelector('header nav');
+navBar.append(link);
+navBar.prepend(anotherLink);
+
+//Stretch Goal
+ctaH1.style.color = "blue";
+
+mainContenth4.forEach((element) => {
+  element.style.color = "blue";
+});
+
+bottomContentH4.forEach((element) => {
+  element.style.color = "blue";
+});
+
+contactSecH4.style.color = "blue";
+
+
+
+
+
+
+
 
 
 
