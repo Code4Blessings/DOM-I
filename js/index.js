@@ -83,30 +83,30 @@ const footerP = document.querySelector('footer p');
 
 //Main Content
   //Text Content
-  mainContenth4[0].textContent = 'Features';
-  mainContentP[0].textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
-  mainContenth4[1].textContent = 'About';
-  mainContentP[1].textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
-  middleImg.src = 'img/mid-page-accent.jpg';
+  mainContenth4[0].textContent = siteContent["main-content"]["features-h4"];
+  mainContentP[0].textContent = siteContent["main-content"]["features-content"];
+  mainContenth4[1].textContent = siteContent["main-content"]["about-h4"];
+  mainContentP[1].textContent = siteContent["main-content"]["about-content"];
+  middleImg.src = siteContent["main-content"]["middle-img-src"];
 
 //Bottom Content
   //Text Content
-  bottomContentH4[0].textContent = 'Services';
-  bottomContentP[0].textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
-  bottomContentH4[1].textContent = 'Product';
-  bottomContentP[1].textContent = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
-  bottomContentH4[2].textContent = 'Vision';
-  bottomContentP[2].textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+  bottomContentH4[0].textContent = siteContent["main-content"]["services-h4"];
+  bottomContentP[0].textContent = siteContent["main-content"]["services-content"];
+  bottomContentH4[1].textContent = siteContent["main-content"]["product-h4"];
+  bottomContentP[1].textContent = siteContent["main-content"]["product-content"];
+  bottomContentH4[2].textContent = siteContent["main-content"]["vision-h4"];
+  bottomContentP[2].textContent = siteContent["main-content"]["vision-content"];
 
 //Contact
   //Text Content
-  contactSecH4.textContent = "Contact";
-  contactSecP[0].textContent = "123 Way 456 Street Somewhere, USA";
-  contactSecP[1].textContent = "1 (888) 888-8888";
-  contactSecP[2].textContent = "sales@greatidea.io";
+  contactSecH4.textContent = siteContent["contact"]["contact-h4"];
+  contactSecP[0].textContent = siteContent["contact"]["address"];
+  contactSecP[1].textContent = siteContent["contact"]["phone"];
+  contactSecP[2].textContent = siteContent["contact"]["email"];
 
 //Footer
-  footerP.textContent = "Copyright Great Idea! 2018";
+  footerP.textContent = siteContent["footer"]["copyright"];
 
 //Task 3 Navbar Color & Size
 navItem.forEach((element) => {
